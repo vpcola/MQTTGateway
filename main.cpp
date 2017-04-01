@@ -1,5 +1,5 @@
-/* mbed main.cpp to test adafruit 2.8" TFT LCD shiled w Touchscreen
- * Copyright (c) 2014 Motoo Tanaka @ Design Methodology Lab
+/* mbed main.cpp to test a secure MQTT connection using MBED TLS library 
+ * Copyright (c) 2017 Vergil Perez Cola
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -11,12 +11,7 @@
  */
  
  /* *
-  * @note This program is derived from the SeeeStudioTFTv2 program.
-  * @note Although both program share same ILI9341 TFT driver,
-  * @note the touch sensor was not same with the Display I purchased from Akizuki.
-  * @note http://akizukidenshi.com/catalog/g/gM-07747/
-  * @note The touch sensor on the display is STMPE610,
-  * @note so I hacked the minimum spi driver for it (polling mode only).
+  * @note This program is derived from the MQTT sample program.
   */
 /**
  * @note To make this work with FRDM-K64F
