@@ -49,8 +49,8 @@ typedef struct
         }
     }
     
-} RadioConfig, *pRadioConfig;
+} RadioCfg, *pRadioCfg;
 
-int parseradioconfig(const char * jsonstring, RadioConfig &);
+int parseradioconfig(const char * jsonstring, RadioCfg &);
 
 #endif

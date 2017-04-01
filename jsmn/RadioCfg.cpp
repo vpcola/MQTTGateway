@@ -1,4 +1,4 @@
-#include "RadioConfig.h"
+#include "RadioCfg.h"
 #include <string.h>
 #include <stdlib.h>
 
@@ -11,7 +11,7 @@ static int jsoneq(const char * json, jsmntok_t * tok, const char * s)
     return -1;    
 }
 
-int parseradioconfig(const char * jsonstring, RadioConfig & radiocfg)
+int parseradioconfig(const char * jsonstring, RadioCfg & radiocfg)
 {
     int i, r;
     

@@ -35,7 +35,7 @@
 #include "DownloadFile.h"
 #include "MQTTSManager.h"
 #include "WeatherInfo.h"
-#include "RadioConfig.h"
+#include "RadioCfg.h"
 #include "config.h"
 
 #include <string>
@@ -177,7 +177,7 @@ int main()
 {
     uint64_t radioID;
     int lasthour = 0;
-    RadioConfig cfg;
+    RadioCfg cfg;
     
     // Mount the SD card first!
     printf("Mounting the filesystem on \"/sd\". ");
@@ -225,7 +225,7 @@ int main()
             printf("%s\r\n", content.c_str());
             printf("==============================\r\n");
             
-            // TODO: pass the downloaded file to the RadioConfig
+            // TODO: pass the downloaded file to the RadioCfg
             if (parseradioconfig(content.c_str(), cfg) == 0)
             {
                 cfg.debug();
